@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ActivityMainBinding databinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        UserData user = new UserData("yklee", "20");
+        UserData user = new UserData("yklee", 20);
         databinding.subView.setUser(user);
         databinding.subView.setPresenter(mMovePresenter);
 
