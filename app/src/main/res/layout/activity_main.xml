@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="mainViewModel" type="com.yklee.test.viewmodel.MainViewModel"/>
+    </data>
 
     <android.support.design.widget.CoordinatorLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,7 +29,8 @@
 
         <include
             android:id="@+id/sub_view"
-            layout="@layout/content_main"/>
+            layout="@layout/content_main"
+            bind:mainViewModel="@{mainViewModel}"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -32,7 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email" />
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            android:onClick="@{() -> mainViewModel.onClickfab(fab)}"/>
 
     </android.support.design.widget.CoordinatorLayout>
 </layout>
