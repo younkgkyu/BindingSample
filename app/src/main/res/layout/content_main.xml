@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <variable name="mainViewModel" type="com.yklee.test.viewmodel.MainViewModel"/>
+        <variable name="mainViewModel" type="com.yklee.test.kotlin.viewmodel.MainViewModelKt"/>
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Show List"
-            android:onClick="@{() -> mainViewModel.MoveListBindingActivity()}"/>
+            android:onClick="@{mainViewModel::moveListBindingActivity}"/>
 
 
         <EditText
@@ -29,7 +29,7 @@
             android:layout_height="60dp"
             app:layout_constraintTop_toBottomOf="@id/btn_show_list"
             android:textSize="30dp"
-            android:afterTextChanged="@{mainViewModel.afterTextChangedst}"/>
+            android:afterTextChanged="@{mainViewModel::afterTextChangedst}"/>
 
         <TextView
             android:id="@+id/tv_multi"
@@ -50,7 +50,7 @@
             app:layout_constraintBaseline_toBaselineOf="@id/tv_multi"
             app:layout_constraintLeft_toRightOf="@id/tv_multi"
             android:textSize="30dp"
-            android:afterTextChanged="@{mainViewModel.afterTextChangednd}"/>
+            android:afterTextChanged="@{mainViewModel::afterTextChangednd}"/>
 
         <TextView
             android:id="@+id/tv_equal"

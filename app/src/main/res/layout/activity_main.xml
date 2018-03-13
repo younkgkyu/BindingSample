@@ -3,7 +3,7 @@
         xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable name="mainViewModel" type="com.yklee.test.viewmodel.MainViewModel"/>
+        <variable name="mainViewModel" type="com.yklee.test.kotlin.viewmodel.MainViewModelKt"/>
     </data>
 
     <android.support.design.widget.CoordinatorLayout
