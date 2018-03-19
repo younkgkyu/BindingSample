@@ -1,5 +1,6 @@
 package com.yklee.test.retrofithttplibrary.sample
 
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import java.util.concurrent.TimeUnit
 
@@ -11,6 +12,12 @@ class DefaultHttpClient {
         fun create(): OkHttpClient {
             val httpClient = OkHttpClient.Builder()
                     .connectTimeout(5, TimeUnit.SECONDS)
+                    .addInterceptor(Interceptor {
+                        chain -> val request = chain.request().newBuilder()
+                            .addHeader("content-type", "application/json; charset=utf-8")
+                            .build()
+                        chain.proceed(request)
+                    })
             return httpClient.build()
         }
     }
