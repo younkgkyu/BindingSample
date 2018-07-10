@@ -1,35 +1,35 @@
-package com.yklee.test.data;
-
-import java.io.Serializable;
-
-/**
- * Created by yeonggyu.lee on 2017-04-26.
- */
-
-public class UserData implements Serializable {
-
-    private String name;
-    private int age;
-
-    public UserData(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-}
+//package com.yklee.test.data;
+//
+//import java.io.Serializable;
+//
+///**
+// * Created by yeonggyu.lee on 2017-04-26.
+// */
+//
+//public class UserData implements Serializable {
+//
+//    private String name;
+//    private int age;
+//
+//    public UserData(String name, int age) {
+//        this.name = name;
+//        this.age = age;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public int getAge() {
+//        return age;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public void setAge(int age) {
+//        this.age = age;
+//    }
+//
+//}
