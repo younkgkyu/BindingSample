@@ -6,5 +6,5 @@ package com.yklee.test.retrofithttplibrary;
 
 public class NetworkConst {
 //    public static String DEFAULT_URL = "http://jsonplaceholder.typicode.com/";
-    public static String DEFAULT_URL = "http://api.github.com/";
+    public static String DEFAULT_URL = "https://api.github.com/";
 }
