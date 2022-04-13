@@ -13,7 +13,6 @@
 //import com.yklee.test.databinding.ActivityListBinding;
 //
 //import java.util.ArrayList;
-//
 ///**
 // * Created by yeonggyu.lee on 2017-04-26.
 // */
