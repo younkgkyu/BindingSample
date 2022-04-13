@@ -42,7 +42,7 @@ class MainViewModelKt: IBaseViewModelKt {
     }
 
     fun onClickfab(view: FloatingActionButton) {
-        Toast.makeText(view.context, "onClickfab", Toast.LENGTH_SHORT).show();
+        Toast.makeText(view.context, "onClickfab", Toast.LENGTH_SHORT).show()
     }
 
     fun afterTextChangedst(edit: Editable) {
